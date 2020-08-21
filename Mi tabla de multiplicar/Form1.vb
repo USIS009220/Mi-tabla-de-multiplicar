@@ -1241,38 +1241,6 @@
             lblr4.Text = Val(txtcodigo4.Text) * 224
             lblnum4.Text = "oz"
 
-        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "Libra" Then
-            lblr4.Text = Val(txtcodigo4.Text)
-            lblnum4.Text = "lb"
-        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "Tonelada" Then
-            lblr4.Text = Val(txtcodigo4.Text) / 2205
-            lblnum4.Text = "T"
-        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "kilogramo" Then
-            lblr4.Text = Val(txtcodigo4.Text) / 2.205
-            lblnum4.Text = "kg"
-        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "Gramo" Then
-            lblr4.Text = Val(txtcodigo4.Text) * 454
-            lblnum4.Text = "g"
-        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "Miligramo" Then
-            lblr4.Text = Val(txtcodigo4.Text) * 453592
-            lblnum4.Text = "mg"
-        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "Microgramo" Then
-            lblr4.Text = Val(txtcodigo4.Text) * 453600000.0
-            lblnum4.Text = "µg"
-        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "Tonelada Larga" Then
-            lblr4.Text = Val(txtcodigo4.Text) / 2240
-            lblnum4.Text = "LT"
-        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "Tonelada corta" Then
-            lblr4.Text = Val(txtcodigo4.Text) / 2000
-            lblnum4.Text = "ST"
-        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "Stone" Then
-            lblr4.Text = Val(txtcodigo4.Text) / 14
-            lblnum4.Text = "st"
-        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "Onza" Then
-            lblr4.Text = Val(txtcodigo4.Text) * 16
-            lblnum4.Text = "oz"
-
-
         ElseIf cboxentrada4.Text = "Onza" And cboxsalida4.Text = "Onza" Then
             lblr4.Text = Val(txtcodigo4.Text)
             lblnum4.Text = "oz"
@@ -1303,8 +1271,39 @@
         ElseIf cboxentrada4.Text = "Onza" And cboxsalida4.Text = "Libra" Then
             lblr4.Text = Val(txtcodigo4.Text) / 16
             lblnum4.Text = "lb"
+
+        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "Libra" Then
+            lblr4.Text = Val(txtcodigo4.Text)
+            lblnum4.Text = "lb"
+        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "Tonelada" Then
+            lblr4.Text = Val(txtcodigo4.Text) / 2205
+            lblnum4.Text = "T"
+        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "Kilogramo" Then
+            lblr4.Text = Val(txtcodigo4.Text) / 2.205
+            lblnum4.Text = "kg"
+        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "Gramo" Then
+            lblr4.Text = Val(txtcodigo4.Text) * 454
+            lblnum4.Text = "g"
+        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "Miligramo" Then
+            lblr4.Text = Val(txtcodigo4.Text) * 453592
+            lblnum4.Text = "mg"
+        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "Microgramo" Then
+            lblr4.Text = Val(txtcodigo4.Text) * 453600000.0
+            lblnum4.Text = "µg"
+        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "Tonelada Larga" Then
+            lblr4.Text = Val(txtcodigo4.Text) / 2240
+            lblnum4.Text = "LT"
+        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "Tonelada corta" Then
+            lblr4.Text = Val(txtcodigo4.Text) / 2000
+            lblnum4.Text = "ST"
+        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "Stone" Then
+            lblr4.Text = Val(txtcodigo4.Text) / 14
+            lblnum4.Text = "st"
+        ElseIf cboxentrada4.Text = "Libra" And cboxsalida4.Text = "Onza" Then
+            lblr4.Text = Val(txtcodigo4.Text) * 16
+            lblnum4.Text = "oz"
         End If
+
+
     End Sub
-
-
 End Class

@@ -26,7 +26,6 @@ Partial Class Form1
         Me.lblnum4 = New System.Windows.Forms.Label()
         Me.lblnum3 = New System.Windows.Forms.Label()
         Me.txtcodigo5 = New System.Windows.Forms.TextBox()
-        Me.txtcodigo4 = New System.Windows.Forms.TextBox()
         Me.txtcodigo3 = New System.Windows.Forms.TextBox()
         Me.lblnum2 = New System.Windows.Forms.Label()
         Me.lblnum1 = New System.Windows.Forms.Label()
@@ -68,7 +67,6 @@ Partial Class Form1
         Me.lblr4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.cboxsalida4 = New System.Windows.Forms.ComboBox()
-        Me.cboxentrada4 = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lblr3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -76,6 +74,8 @@ Partial Class Form1
         Me.cboxsalida3 = New System.Windows.Forms.ComboBox()
         Me.cboxentrada3 = New System.Windows.Forms.ComboBox()
         Me.btnmoneda = New System.Windows.Forms.Button()
+        Me.txtcodigo4 = New System.Windows.Forms.TextBox()
+        Me.cboxentrada4 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'lblnum5
@@ -112,14 +112,6 @@ Partial Class Form1
         Me.txtcodigo5.Name = "txtcodigo5"
         Me.txtcodigo5.Size = New System.Drawing.Size(100, 20)
         Me.txtcodigo5.TabIndex = 104
-        '
-        'txtcodigo4
-        '
-        Me.txtcodigo4.BackColor = System.Drawing.SystemColors.ScrollBar
-        Me.txtcodigo4.Location = New System.Drawing.Point(335, 23)
-        Me.txtcodigo4.Name = "txtcodigo4"
-        Me.txtcodigo4.Size = New System.Drawing.Size(100, 20)
-        Me.txtcodigo4.TabIndex = 103
         '
         'txtcodigo3
         '
@@ -525,22 +517,11 @@ Partial Class Form1
         Me.cboxsalida4.BackColor = System.Drawing.SystemColors.Desktop
         Me.cboxsalida4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboxsalida4.FormattingEnabled = True
-        Me.cboxsalida4.Items.AddRange(New Object() {"Tonelada", "Kilogramo", "Gramo", "Miligramo", "Microgramo", "Tonelada Larga", "Tonelada corta", "Stone", "Libra", "Onza"})
+        Me.cboxsalida4.Items.AddRange(New Object() {"Tonelada", "Kilogramo", "Gramo", "Miligramo", "Microgramo", "Tonelada Larga", "Tonelada corta", "Stone", "Onza", "Libra"})
         Me.cboxsalida4.Location = New System.Drawing.Point(323, 102)
         Me.cboxsalida4.Name = "cboxsalida4"
         Me.cboxsalida4.Size = New System.Drawing.Size(139, 21)
         Me.cboxsalida4.TabIndex = 62
-        '
-        'cboxentrada4
-        '
-        Me.cboxentrada4.BackColor = System.Drawing.SystemColors.Desktop
-        Me.cboxentrada4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboxentrada4.FormattingEnabled = True
-        Me.cboxentrada4.Items.AddRange(New Object() {"Tonelada", "Kilogramo", "Gramo", "Miligramo", "Microgramo", "Tonelada Larga", "Tonelada corta", "Stone", "Libra ", "Onza"})
-        Me.cboxentrada4.Location = New System.Drawing.Point(322, 49)
-        Me.cboxentrada4.Name = "cboxentrada4"
-        Me.cboxentrada4.Size = New System.Drawing.Size(141, 21)
-        Me.cboxentrada4.TabIndex = 61
         '
         'Label4
         '
@@ -615,11 +596,31 @@ Partial Class Form1
         Me.btnmoneda.Text = "Moneda"
         Me.btnmoneda.UseVisualStyleBackColor = False
         '
+        'txtcodigo4
+        '
+        Me.txtcodigo4.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.txtcodigo4.Location = New System.Drawing.Point(335, 23)
+        Me.txtcodigo4.Name = "txtcodigo4"
+        Me.txtcodigo4.Size = New System.Drawing.Size(100, 20)
+        Me.txtcodigo4.TabIndex = 103
+        '
+        'cboxentrada4
+        '
+        Me.cboxentrada4.BackColor = System.Drawing.SystemColors.Desktop
+        Me.cboxentrada4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboxentrada4.FormattingEnabled = True
+        Me.cboxentrada4.Items.AddRange(New Object() {"Tonelada", "Kilogramo", "Gramo", "Miligramo", "Microgramo", "Tonelada Larga", "Tonelada corta", "Stone", "Onza", "Libra"})
+        Me.cboxentrada4.Location = New System.Drawing.Point(322, 49)
+        Me.cboxentrada4.Name = "cboxentrada4"
+        Me.cboxentrada4.Size = New System.Drawing.Size(136, 21)
+        Me.cboxentrada4.TabIndex = 108
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(805, 486)
+        Me.Controls.Add(Me.cboxentrada4)
         Me.Controls.Add(Me.lblnum5)
         Me.Controls.Add(Me.lblnum4)
         Me.Controls.Add(Me.lblnum3)
@@ -666,7 +667,6 @@ Partial Class Form1
         Me.Controls.Add(Me.lblr4)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.cboxsalida4)
-        Me.Controls.Add(Me.cboxentrada4)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.lblr3)
         Me.Controls.Add(Me.Label2)
@@ -675,7 +675,7 @@ Partial Class Form1
         Me.Controls.Add(Me.cboxentrada3)
         Me.Controls.Add(Me.btnmoneda)
         Me.Name = "Form1"
-        Me.Text = "Conversores"
+        Me.Text = "6"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -685,7 +685,6 @@ Partial Class Form1
     Friend WithEvents lblnum4 As Label
     Friend WithEvents lblnum3 As Label
     Friend WithEvents txtcodigo5 As TextBox
-    Friend WithEvents txtcodigo4 As TextBox
     Friend WithEvents txtcodigo3 As TextBox
     Friend WithEvents lblnum2 As Label
     Friend WithEvents lblnum1 As Label
@@ -734,5 +733,6 @@ Partial Class Form1
     Friend WithEvents cboxsalida3 As ComboBox
     Friend WithEvents cboxentrada3 As ComboBox
     Friend WithEvents btnmoneda As Button
+    Friend WithEvents txtcodigo4 As TextBox
     Friend WithEvents cboxentrada4 As ComboBox
 End Class
