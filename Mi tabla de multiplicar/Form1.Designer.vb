@@ -67,14 +67,14 @@ Partial Class Form1
         Me.btnmasa = New System.Windows.Forms.Button()
         Me.lblr4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.cbxsalida4 = New System.Windows.Forms.ComboBox()
-        Me.cbxentrada4 = New System.Windows.Forms.ComboBox()
+        Me.cboxsalida4 = New System.Windows.Forms.ComboBox()
+        Me.cboxentrada4 = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lblr3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.cbxsalida3 = New System.Windows.Forms.ComboBox()
-        Me.cbxentrada3 = New System.Windows.Forms.ComboBox()
+        Me.cboxsalida3 = New System.Windows.Forms.ComboBox()
+        Me.cboxentrada3 = New System.Windows.Forms.ComboBox()
         Me.btnmoneda = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -90,7 +90,7 @@ Partial Class Form1
         'lblnum4
         '
         Me.lblnum4.AutoSize = True
-        Me.lblnum4.Location = New System.Drawing.Point(421, 140)
+        Me.lblnum4.Location = New System.Drawing.Point(447, 143)
         Me.lblnum4.Name = "lblnum4"
         Me.lblnum4.Size = New System.Drawing.Size(16, 13)
         Me.lblnum4.TabIndex = 106
@@ -504,7 +504,7 @@ Partial Class Form1
         '
         Me.lblr4.AutoSize = True
         Me.lblr4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblr4.Location = New System.Drawing.Point(332, 138)
+        Me.lblr4.Location = New System.Drawing.Point(317, 140)
         Me.lblr4.Name = "lblr4"
         Me.lblr4.Size = New System.Drawing.Size(83, 16)
         Me.lblr4.TabIndex = 64
@@ -520,27 +520,27 @@ Partial Class Form1
         Me.Label5.TabIndex = 63
         Me.Label5.Text = "A"
         '
-        'cbxsalida4
+        'cboxsalida4
         '
-        Me.cbxsalida4.BackColor = System.Drawing.SystemColors.Desktop
-        Me.cbxsalida4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxsalida4.FormattingEnabled = True
-        Me.cbxsalida4.Items.AddRange(New Object() {"Colon", "USA", "EUR"})
-        Me.cbxsalida4.Location = New System.Drawing.Point(323, 102)
-        Me.cbxsalida4.Name = "cbxsalida4"
-        Me.cbxsalida4.Size = New System.Drawing.Size(139, 21)
-        Me.cbxsalida4.TabIndex = 62
+        Me.cboxsalida4.BackColor = System.Drawing.SystemColors.Desktop
+        Me.cboxsalida4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboxsalida4.FormattingEnabled = True
+        Me.cboxsalida4.Items.AddRange(New Object() {"Tonelada", "Kilogramo", "Gramo", "Miligramo", "Microgramo", "Tonelada Larga", "Tonelada corta", "Stone", "Libra", "Onza"})
+        Me.cboxsalida4.Location = New System.Drawing.Point(323, 102)
+        Me.cboxsalida4.Name = "cboxsalida4"
+        Me.cboxsalida4.Size = New System.Drawing.Size(139, 21)
+        Me.cboxsalida4.TabIndex = 62
         '
-        'cbxentrada4
+        'cboxentrada4
         '
-        Me.cbxentrada4.BackColor = System.Drawing.SystemColors.Desktop
-        Me.cbxentrada4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxentrada4.FormattingEnabled = True
-        Me.cbxentrada4.Items.AddRange(New Object() {"Colon", "USA", "EUR"})
-        Me.cbxentrada4.Location = New System.Drawing.Point(322, 49)
-        Me.cbxentrada4.Name = "cbxentrada4"
-        Me.cbxentrada4.Size = New System.Drawing.Size(141, 21)
-        Me.cbxentrada4.TabIndex = 61
+        Me.cboxentrada4.BackColor = System.Drawing.SystemColors.Desktop
+        Me.cboxentrada4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboxentrada4.FormattingEnabled = True
+        Me.cboxentrada4.Items.AddRange(New Object() {"Tonelada", "Kilogramo", "Gramo", "Miligramo", "Microgramo", "Tonelada Larga", "Tonelada corta", "Stone", "Libra ", "Onza"})
+        Me.cboxentrada4.Location = New System.Drawing.Point(322, 49)
+        Me.cboxentrada4.Name = "cboxentrada4"
+        Me.cboxentrada4.Size = New System.Drawing.Size(141, 21)
+        Me.cboxentrada4.TabIndex = 61
         '
         'Label4
         '
@@ -582,27 +582,27 @@ Partial Class Form1
         Me.Label1.TabIndex = 57
         Me.Label1.Text = "MONEDA"
         '
-        'cbxsalida3
+        'cboxsalida3
         '
-        Me.cbxsalida3.BackColor = System.Drawing.SystemColors.Desktop
-        Me.cbxsalida3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxsalida3.FormattingEnabled = True
-        Me.cbxsalida3.Items.AddRange(New Object() {"Colon", "Dolar Estadounidense", "EURO", "Yen Japoneses", "Libra Esterlina", "Dolar Auntraliano", "Franco Suizo", "Dolar Canadiense", "Peso Mexicano", "Yuan Chino"})
-        Me.cbxsalida3.Location = New System.Drawing.Point(53, 102)
-        Me.cbxsalida3.Name = "cbxsalida3"
-        Me.cbxsalida3.Size = New System.Drawing.Size(136, 21)
-        Me.cbxsalida3.TabIndex = 56
+        Me.cboxsalida3.BackColor = System.Drawing.SystemColors.Desktop
+        Me.cboxsalida3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboxsalida3.FormattingEnabled = True
+        Me.cboxsalida3.Items.AddRange(New Object() {"Colon", "Dolar Estadounidense", "EURO", "Yen Japoneses", "Libra Esterlina", "Dolar Auntraliano", "Franco Suizo", "Dolar Canadiense", "Peso Mexicano", "Yuan Chino"})
+        Me.cboxsalida3.Location = New System.Drawing.Point(53, 102)
+        Me.cboxsalida3.Name = "cboxsalida3"
+        Me.cboxsalida3.Size = New System.Drawing.Size(136, 21)
+        Me.cboxsalida3.TabIndex = 56
         '
-        'cbxentrada3
+        'cboxentrada3
         '
-        Me.cbxentrada3.BackColor = System.Drawing.SystemColors.Desktop
-        Me.cbxentrada3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbxentrada3.FormattingEnabled = True
-        Me.cbxentrada3.Items.AddRange(New Object() {"Colon", "Dolar Estadounidense", "EURO", "Yen Japoneses", "Libra Esterlina", "Dolar Auntraliano", "Franco Suizo", "Dolar Canadiense", "Peso Mexicano", "Yuan Chino"})
-        Me.cbxentrada3.Location = New System.Drawing.Point(53, 49)
-        Me.cbxentrada3.Name = "cbxentrada3"
-        Me.cbxentrada3.Size = New System.Drawing.Size(136, 21)
-        Me.cbxentrada3.TabIndex = 55
+        Me.cboxentrada3.BackColor = System.Drawing.SystemColors.Desktop
+        Me.cboxentrada3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboxentrada3.FormattingEnabled = True
+        Me.cboxentrada3.Items.AddRange(New Object() {"Colon", "Dolar Estadounidense", "EURO", "Yen Japoneses", "Libra Esterlina", "Dolar Auntraliano", "Franco Suizo", "Dolar Canadiense", "Peso Mexicano", "Yuan Chino"})
+        Me.cboxentrada3.Location = New System.Drawing.Point(53, 49)
+        Me.cboxentrada3.Name = "cboxentrada3"
+        Me.cboxentrada3.Size = New System.Drawing.Size(136, 21)
+        Me.cboxentrada3.TabIndex = 55
         '
         'btnmoneda
         '
@@ -665,14 +665,14 @@ Partial Class Form1
         Me.Controls.Add(Me.btnmasa)
         Me.Controls.Add(Me.lblr4)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.cbxsalida4)
-        Me.Controls.Add(Me.cbxentrada4)
+        Me.Controls.Add(Me.cboxsalida4)
+        Me.Controls.Add(Me.cboxentrada4)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.lblr3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.cbxsalida3)
-        Me.Controls.Add(Me.cbxentrada3)
+        Me.Controls.Add(Me.cboxsalida3)
+        Me.Controls.Add(Me.cboxentrada3)
         Me.Controls.Add(Me.btnmoneda)
         Me.Name = "Form1"
         Me.Text = "Conversores"
@@ -726,13 +726,13 @@ Partial Class Form1
     Friend WithEvents btnmasa As Button
     Friend WithEvents lblr4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents cbxsalida4 As ComboBox
-    Friend WithEvents cbxentrada4 As ComboBox
+    Friend WithEvents cboxsalida4 As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents lblr3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents cbxsalida3 As ComboBox
-    Friend WithEvents cbxentrada3 As ComboBox
+    Friend WithEvents cboxsalida3 As ComboBox
+    Friend WithEvents cboxentrada3 As ComboBox
     Friend WithEvents btnmoneda As Button
+    Friend WithEvents cboxentrada4 As ComboBox
 End Class
