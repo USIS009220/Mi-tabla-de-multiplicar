@@ -568,7 +568,7 @@ Partial Class Form1
         Me.cboxsalida3.BackColor = System.Drawing.SystemColors.Desktop
         Me.cboxsalida3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboxsalida3.FormattingEnabled = True
-        Me.cboxsalida3.Items.AddRange(New Object() {"Colon", "Dolar Estadounidense", "EURO", "Yen Japoneses", "Libra Esterlina", "Dolar Auntraliano", "Franco Suizo", "Dolar Canadiense", "Peso Mexicano", "Yuan Chino"})
+        Me.cboxsalida3.Items.AddRange(New Object() {"Colon Salvadoreño ", "Dolar Estadounidense", "Quetzal", "Lempira", "Colón Costarisense", "Balboa", "Cordoba Nicaraguence", "Dolar Canadiense", "Peso Mexican", "Sol Peruano"})
         Me.cboxsalida3.Location = New System.Drawing.Point(53, 102)
         Me.cboxsalida3.Name = "cboxsalida3"
         Me.cboxsalida3.Size = New System.Drawing.Size(136, 21)
@@ -579,7 +579,7 @@ Partial Class Form1
         Me.cboxentrada3.BackColor = System.Drawing.SystemColors.Desktop
         Me.cboxentrada3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboxentrada3.FormattingEnabled = True
-        Me.cboxentrada3.Items.AddRange(New Object() {"Colon", "Dolar Estadounidense", "EURO", "Yen Japoneses", "Libra Esterlina", "Dolar Auntraliano", "Franco Suizo", "Dolar Canadiense", "Peso Mexicano", "Yuan Chino"})
+        Me.cboxentrada3.Items.AddRange(New Object() {"Colon Salvadoreño ", "Dolar Estadounidense", "Quetzal", "Lempira", "Colón Costarisense", "Balboa", "Cordoba Nicaraguence", "Dolar Canadiense", "Peso Mexican", "Sol Peruano"})
         Me.cboxentrada3.Location = New System.Drawing.Point(53, 49)
         Me.cboxentrada3.Name = "cboxentrada3"
         Me.cboxentrada3.Size = New System.Drawing.Size(136, 21)

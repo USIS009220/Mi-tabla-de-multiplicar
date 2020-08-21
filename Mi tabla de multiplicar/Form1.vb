@@ -957,40 +957,86 @@
         ElseIf cbxentrada2.Text = "Año natural" And cbxsalida2.Text = "Año natural" Then
             lblr2.Text = Val(txtcodigo2.Text)
             lblnum2.Text = "A N"
-        End If
+
+
+
+            If cboxentrada3.Text = "Nanosegundo" And cboxsalida3.Text = "Nanosegundo" Then
+                lblr3.Text = Val(txtcodigo2.Text)
+                lblnum3.Text = "NS"
+            ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Microsegundo" Then
+                lblr2.Text = Val(txtcodigo2.Text) / 1000
+                lblnum2.Text = "MS"
+            ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Milisegundo" Then
+                lblr2.Text = Val(txtcodigo2.Text) / 1000000.0
+                lblnum2.Text = "MLS"
+            ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Segundo" Then
+                lblr2.Text = Val(txtcodigo2.Text) / 1000000000.0
+                lblnum2.Text = "Seng"
+            ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Minuto" Then
+                lblr2.Text = Val(txtcodigo2.Text) / 60000000000.0
+                lblnum2.Text = "Min"
+            ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Hora" Then
+                lblr2.Text = Val(txtcodigo2.Text) / 3600000000000.0
+                lblnum2.Text = "Hora"
+            ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Día" Then
+                lblr2.Text = Val(txtcodigo2.Text) / 86400000000000.0
+                lblnum2.Text = "Dia"
+            ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Semana" Then
+                lblr2.Text = Val(txtcodigo2.Text) / 604800000000000.0
+                lblnum2.Text = "Smn"
+            ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Mes" Then
+                lblr2.Text = Val(txtcodigo2.Text) / 2.628E+15
+                lblnum2.Text = "Mes"
+            ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Año natural" Then
+                lblr2.Text = Val(txtcodigo2.Text) / 3.154E+16
+                lblnum2.Text = "A.N"
+
+
+            End If
     End Sub
 
     Private Sub btnmoneda_Click(sender As Object, e As EventArgs) Handles btnmoneda.Click
-        If cboxentrada3.Text = "Nanosegundo" And cboxsalida3.Text = "Nanosegundo" Then
-            lblr3.Text = Val(txtcodigo2.Text)
-            lblnum3.Text = "NS"
-        ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Microsegundo" Then
-            lblr2.Text = Val(txtcodigo2.Text) / 1000
-            lblnum2.Text = "MS"
-        ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Milisegundo" Then
-            lblr2.Text = Val(txtcodigo2.Text) / 1000000.0
-            lblnum2.Text = "MLS"
-        ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Segundo" Then
-            lblr2.Text = Val(txtcodigo2.Text) / 1000000000.0
-            lblnum2.Text = "Seng"
-        ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Minuto" Then
-            lblr2.Text = Val(txtcodigo2.Text) / 60000000000.0
-            lblnum2.Text = "Min"
-        ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Hora" Then
-            lblr2.Text = Val(txtcodigo2.Text) / 3600000000000.0
-            lblnum2.Text = "Hora"
-        ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Día" Then
-            lblr2.Text = Val(txtcodigo2.Text) / 86400000000000.0
-            lblnum2.Text = "Dia"
-        ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Semana" Then
-            lblr2.Text = Val(txtcodigo2.Text) / 604800000000000.0
-            lblnum2.Text = "Smn"
-        ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Mes" Then
-            lblr2.Text = Val(txtcodigo2.Text) / 2.628E+15
-            lblnum2.Text = "Mes"
-        ElseIf cbxentrada2.Text = "Nanosegundo" And cbxsalida2.Text = "Año natural" Then
-            lblr2.Text = Val(txtcodigo2.Text) / 3.154E+16
-            lblnum2.Text = "A.N"
+        If cboxentrada3.Text = "Balboa" And cboxsalida3.Text = "Balboa" Then
+            lblr2.Text = Val(txtcodigo2.Text)
+            lblnum2.Text = " PAB"
+        ElseIf cboxentrada3.Text = "Balboa" And cboxsalida3.Text = "Dolar Estadounidense" Then
+            lblr2.Text = Val(txtcodigo2.Text) * 10000
+            lblnum2.Text = " USD"
+        ElseIf cboxentrada3.Text = "Balboa" And cboxsalida3.Text = "Colon Salvadoreño" Then
+            lblr2.Text = Val(txtcodigo2.Text) * 8.75
+            lblnum2.Text = "₡"
+        ElseIf cboxentrada3.Text = "Balboa" And cboxsalida3.Text = "Quetzal" Then
+            lblr2.Text = Val(txtcodigo2.Text) * 7.68
+            lblnum2.Text = "Q"
+        ElseIf cboxentrada3.Text = "Balboa" And cboxsalida3.Text = "Lempira" Then
+            lblr2.Text = Val(txtcodigo2.Text) * 24.66
+            lblnum2.Text = "L"
+        ElseIf cboxentrada3.Text = "Balboa" And cboxsalida3.Text = "Colón Costarisense" Then
+            lblr2.Text = Val(txtcodigo2.Text) * 595.4
+            lblnum2.Text = "₡"
+        ElseIf cboxentrada3.Text = "Balboa" And cboxsalida3.Text = "Cordoba Nicaraguence" Then
+            lblr2.Text = Val(txtcodigo2.Text) * 34.87
+            lblnum2.Text = "C$"
+        ElseIf cboxentrada3.Text = "Balboa" And cboxsalida3.Text = "Dolar Canadiense" Then
+            lblr2.Text = Val(txtcodigo2.Text) * 1.32
+            lblnum2.Text = "C$"
+        ElseIf cboxentrada3.Text = "Balboa" And cboxsalida3.Text = "Peso Mexicano" Then
+            lblr2.Text = Val(txtcodigo2.Text) * 22.14
+            lblnum2.Text = "$"
+        ElseIf cboxentrada3.Text = "Balboa" And cboxsalida3.Text = "Sol Peruano" Then
+            lblr2.Text = Val(txtcodigo2.Text) * 3.56
+            lblnum2.Text = "S/"
+
+        ElseIf cboxentrada3.Text = "Cordoba Nicaraguence" And cboxsalida3.Text = "Cordoba Nicaraguence" Then
+            lblr2.Text = Val(txtcodigo2.Text)
+            lblnum2.Text = "C$"
+        ElseIf cboxentrada3.Text = "Cordoba Nicaraguence" And cboxsalida3.Text = "Colon Salvadoreño" Then
+            lblr2.Text = Val(txtcodigo2.Text) * 0.25
+            lblnum2.Text = "₡"
+        ElseIf cboxentrada3.Text = "Cordoba Nicaraguence" And cboxsalida3.Text = "Dolar Estadounidense" Then
+            lblr2.Text = Val(txtcodigo2.Text) * 0.029
+            lblnum2.Text = "$"
+
         End If
     End Sub
 
