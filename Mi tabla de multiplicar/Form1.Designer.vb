@@ -459,10 +459,11 @@ Partial Class Form1
         '
         'cbxsalida5
         '
-        Me.cbxsalida5.BackColor = System.Drawing.SystemColors.Desktop
+        Me.cbxsalida5.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.cbxsalida5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbxsalida5.ForeColor = System.Drawing.SystemColors.Desktop
         Me.cbxsalida5.FormattingEnabled = True
-        Me.cbxsalida5.Items.AddRange(New Object() {"Colon", "USA", "EUR"})
+        Me.cbxsalida5.Items.AddRange(New Object() {"Litro", "Mililitro", "Galón Imperial", "Cucharada estadounidense", "Pinta estadounidense", "Onza liquida imperial ", "Galón estadounidense", "Metro cubico", "Pie cúbico", "Pulgada cúbica"})
         Me.cbxsalida5.Location = New System.Drawing.Point(592, 102)
         Me.cbxsalida5.Name = "cbxsalida5"
         Me.cbxsalida5.Size = New System.Drawing.Size(139, 21)
@@ -470,10 +471,11 @@ Partial Class Form1
         '
         'cbxentrada5
         '
-        Me.cbxentrada5.BackColor = System.Drawing.SystemColors.Desktop
+        Me.cbxentrada5.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.cbxentrada5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbxentrada5.ForeColor = System.Drawing.SystemColors.Desktop
         Me.cbxentrada5.FormattingEnabled = True
-        Me.cbxentrada5.Items.AddRange(New Object() {"Colon", "USA", "EUR"})
+        Me.cbxentrada5.Items.AddRange(New Object() {"Litro", "Mililitro", "Galón Imperial", "Cucharada estadounidense", "Pinta estadounidense", "Onza liquida imperial ", "Galón estadounidense", "Metro cubico", "Pie cúbico", "Pulgada cúbica"})
         Me.cbxentrada5.Location = New System.Drawing.Point(592, 49)
         Me.cbxentrada5.Name = "cbxentrada5"
         Me.cbxentrada5.Size = New System.Drawing.Size(139, 21)
