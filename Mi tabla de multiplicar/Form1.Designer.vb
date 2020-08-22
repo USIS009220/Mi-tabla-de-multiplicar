@@ -90,7 +90,7 @@ Partial Class Form1
         'lblnum4
         '
         Me.lblnum4.AutoSize = True
-        Me.lblnum4.Location = New System.Drawing.Point(447, 143)
+        Me.lblnum4.Location = New System.Drawing.Point(435, 144)
         Me.lblnum4.Name = "lblnum4"
         Me.lblnum4.Size = New System.Drawing.Size(16, 13)
         Me.lblnum4.TabIndex = 106
