@@ -153,6 +153,51 @@
             lblnum3.Text = "HECT"
 
         End If
+        If cbxentrada3.Text = "Metro cuadrado" And cbxsalida3.Text = "Pie cuadrado" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 10.76
+            lblnum3.Text = "ft²"
+        ElseIf cbxentrada3.Text = "Metro cuadrado" And cbxsalida3.Text = "Vara cuadrada" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 1.43
+            lblnum3.Text = "v²"
+        ElseIf cbxentrada3.Text = "Metro cuadrado" And cbxsalida3.Text = "Yarda cuadrada" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 1.2
+            lblnum3.Text = "yd²"
+        ElseIf cbxentrada3.Text = "Metro cuadrado" And cbxsalida3.Text = "Metro cuadrado" Then
+            lblr3.Text = Val(txtcodigo3.Text)
+            lblnum3.Text = "m²"
+        ElseIf cbxentrada3.Text = "Metro cuadrado" And cbxsalida3.Text = "Tareas" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.0023
+            lblnum3.Text = "T"
+        ElseIf cbxentrada3.Text = "Metro cuadrado" And cbxsalida3.Text = "Manzana" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.0001434
+            lblnum3.Text = "M"
+        ElseIf cbxentrada3.Text = "Metro cuadrado" And cbxsalida3.Text = "Hectárea" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.0001
+            lblnum3.Text = "ha"
+        End If
+
+        If cbxentrada3.Text = "Tareas" And cbxsalida3.Text = "Pie cuadrado" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 470382
+            lblnum3.Text = "ft²"
+        ElseIf cbxentrada3.Text = "Tareas" And cbxsalida3.Text = "Vara cuadrada" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 624.29
+            lblnum3.Text = "v²"
+        ElseIf cbxentrada3.Text = "Tareas" And cbxsalida3.Text = "Yarda cuadrada" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 522.64
+            lblnum3.Text = "yd²"
+        ElseIf cbxentrada3.Text = "Tareas" And cbxsalida3.Text = "Metro cuadrado" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 437
+            lblnum3.Text = "m²"
+        ElseIf cbxentrada3.Text = "Tareas" And cbxsalida3.Text = "Tareas" Then
+            lblr3.Text = Val(txtcodigo3.Text)
+            lblnum3.Text = "T"
+        ElseIf cbxentrada3.Text = "Tareas" And cbxsalida3.Text = "Manzana" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.06
+            lblnum3.Text = "M"
+        ElseIf cbxentrada3.Text = "Tareas" And cbxsalida3.Text = "Hectárea" Then
+            lblr3.Text = Val(txtcodigo3.Text) * 0.04
+            lblnum3.Text = "ha"
+        End If
 
 
         If cbxentrada3.Text = "Manzana" And cbxsalida3.Text = "Manzana" Then
