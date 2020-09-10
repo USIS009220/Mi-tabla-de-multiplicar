@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,56 +20,126 @@ Partial Class Form1
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lblntabla = New System.Windows.Forms.Label()
-        Me.txtntabla = New System.Windows.Forms.TextBox()
-        Me.btnProcesar = New System.Windows.Forms.Button()
-        Me.lstTabla = New System.Windows.Forms.ListBox()
+        Me.btnConvertir = New System.Windows.Forms.Button()
+        Me.lblrespuesta = New System.Windows.Forms.Label()
+        Me.lblcantidad = New System.Windows.Forms.Label()
+        Me.txtcantidad = New System.Windows.Forms.TextBox()
+        Me.cbotipo = New System.Windows.Forms.ComboBox()
+        Me.lbltipo = New System.Windows.Forms.Label()
+        Me.cboa = New System.Windows.Forms.ComboBox()
+        Me.cbode = New System.Windows.Forms.ComboBox()
+        Me.lbla = New System.Windows.Forms.Label()
+        Me.lblde = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'lblntabla
+        'btnConvertir
         '
-        Me.lblntabla.AutoSize = True
-        Me.lblntabla.Location = New System.Drawing.Point(52, 61)
-        Me.lblntabla.Name = "lblntabla"
-        Me.lblntabla.Size = New System.Drawing.Size(37, 13)
-        Me.lblntabla.TabIndex = 0
-        Me.lblntabla.Text = "Tabla:"
+        Me.btnConvertir.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConvertir.Location = New System.Drawing.Point(126, 154)
+        Me.btnConvertir.Name = "btnConvertir"
+        Me.btnConvertir.Size = New System.Drawing.Size(172, 73)
+        Me.btnConvertir.TabIndex = 25
+        Me.btnConvertir.Text = "Convertir"
+        Me.btnConvertir.UseVisualStyleBackColor = True
         '
-        'txtntabla
+        'lblrespuesta
         '
-        Me.txtntabla.Location = New System.Drawing.Point(95, 58)
-        Me.txtntabla.Name = "txtntabla"
-        Me.txtntabla.Size = New System.Drawing.Size(136, 20)
-        Me.txtntabla.TabIndex = 1
+        Me.lblrespuesta.AutoSize = True
+        Me.lblrespuesta.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblrespuesta.Location = New System.Drawing.Point(323, 182)
+        Me.lblrespuesta.Name = "lblrespuesta"
+        Me.lblrespuesta.Size = New System.Drawing.Size(111, 19)
+        Me.lblrespuesta.TabIndex = 24
+        Me.lblrespuesta.Text = "Respuesta: ?"
         '
-        'btnProcesar
+        'lblcantidad
         '
-        Me.btnProcesar.Location = New System.Drawing.Point(46, 121)
-        Me.btnProcesar.Name = "btnProcesar"
-        Me.btnProcesar.Size = New System.Drawing.Size(209, 87)
-        Me.btnProcesar.TabIndex = 2
-        Me.btnProcesar.Text = "Generar Tabla"
-        Me.btnProcesar.UseVisualStyleBackColor = True
+        Me.lblcantidad.AutoSize = True
+        Me.lblcantidad.Location = New System.Drawing.Point(345, 103)
+        Me.lblcantidad.Name = "lblcantidad"
+        Me.lblcantidad.Size = New System.Drawing.Size(52, 13)
+        Me.lblcantidad.TabIndex = 23
+        Me.lblcantidad.Text = "Cantidad:"
         '
-        'lstTabla
+        'txtcantidad
         '
-        Me.lstTabla.FormattingEnabled = True
-        Me.lstTabla.Location = New System.Drawing.Point(276, 61)
-        Me.lstTabla.Name = "lstTabla"
-        Me.lstTabla.Size = New System.Drawing.Size(234, 147)
-        Me.lstTabla.TabIndex = 3
+        Me.txtcantidad.Location = New System.Drawing.Point(403, 100)
+        Me.txtcantidad.Name = "txtcantidad"
+        Me.txtcantidad.Size = New System.Drawing.Size(100, 20)
+        Me.txtcantidad.TabIndex = 22
+        '
+        'cbotipo
+        '
+        Me.cbotipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbotipo.FormattingEnabled = True
+        Me.cbotipo.Items.AddRange(New Object() {"Monedas", "Longitud", "Masa", "Almacenamiento", "Tiempo"})
+        Me.cbotipo.Location = New System.Drawing.Point(218, 43)
+        Me.cbotipo.Name = "cbotipo"
+        Me.cbotipo.Size = New System.Drawing.Size(121, 21)
+        Me.cbotipo.TabIndex = 21
+        '
+        'lbltipo
+        '
+        Me.lbltipo.AutoSize = True
+        Me.lbltipo.Location = New System.Drawing.Point(181, 46)
+        Me.lbltipo.Name = "lbltipo"
+        Me.lbltipo.Size = New System.Drawing.Size(31, 13)
+        Me.lbltipo.TabIndex = 20
+        Me.lbltipo.Text = "Tipo:"
+        '
+        'cboa
+        '
+        Me.cboa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboa.FormattingEnabled = True
+        Me.cboa.Location = New System.Drawing.Point(218, 103)
+        Me.cboa.Name = "cboa"
+        Me.cboa.Size = New System.Drawing.Size(121, 21)
+        Me.cboa.TabIndex = 19
+        '
+        'cbode
+        '
+        Me.cbode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbode.FormattingEnabled = True
+        Me.cbode.Location = New System.Drawing.Point(68, 103)
+        Me.cbode.Name = "cbode"
+        Me.cbode.Size = New System.Drawing.Size(121, 21)
+        Me.cbode.TabIndex = 18
+        '
+        'lbla
+        '
+        Me.lbla.AutoSize = True
+        Me.lbla.Location = New System.Drawing.Point(195, 106)
+        Me.lbla.Name = "lbla"
+        Me.lbla.Size = New System.Drawing.Size(17, 13)
+        Me.lbla.TabIndex = 17
+        Me.lbla.Text = "A:"
+        '
+        'lblde
+        '
+        Me.lblde.AutoSize = True
+        Me.lblde.Location = New System.Drawing.Point(37, 106)
+        Me.lblde.Name = "lblde"
+        Me.lblde.Size = New System.Drawing.Size(25, 13)
+        Me.lblde.TabIndex = 16
+        Me.lblde.Text = "DE:"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(563, 307)
-        Me.Controls.Add(Me.lstTabla)
-        Me.Controls.Add(Me.btnProcesar)
-        Me.Controls.Add(Me.txtntabla)
-        Me.Controls.Add(Me.lblntabla)
+        Me.Controls.Add(Me.btnConvertir)
+        Me.Controls.Add(Me.lblrespuesta)
+        Me.Controls.Add(Me.lblcantidad)
+        Me.Controls.Add(Me.txtcantidad)
+        Me.Controls.Add(Me.cbotipo)
+        Me.Controls.Add(Me.lbltipo)
+        Me.Controls.Add(Me.cboa)
+        Me.Controls.Add(Me.cbode)
+        Me.Controls.Add(Me.lbla)
+        Me.Controls.Add(Me.lblde)
         Me.Name = "Form1"
         Me.Text = "Tabla de Multiplicar"
         Me.ResumeLayout(False)
@@ -77,8 +147,14 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents lblntabla As Label
-    Friend WithEvents txtntabla As TextBox
-    Friend WithEvents btnProcesar As Button
-    Friend WithEvents lstTabla As ListBox
+    Friend WithEvents btnConvertir As Button
+    Friend WithEvents lblrespuesta As Label
+    Friend WithEvents lblcantidad As Label
+    Friend WithEvents txtcantidad As TextBox
+    Friend WithEvents cbotipo As ComboBox
+    Friend WithEvents lbltipo As Label
+    Friend WithEvents cboa As ComboBox
+    Friend WithEvents cbode As ComboBox
+    Friend WithEvents lbla As Label
+    Friend WithEvents lblde As Label
 End Class
