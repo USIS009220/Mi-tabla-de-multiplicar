@@ -30,7 +30,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(563, 307)
         Me.Name = "Form1"
-        Me.Text = "Tabla de Multiplicar"
+        Me.Text = "Sistema de inventario y facturacion"
         Me.ResumeLayout(False)
 
     End Sub
