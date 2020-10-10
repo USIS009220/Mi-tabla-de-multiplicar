@@ -23,23 +23,23 @@ Partial Class FrmPaciente
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.grbEdicion = New System.Windows.Forms.GroupBox()
-        Me.btnBuscarCliente = New System.Windows.Forms.Button()
-        Me.btnEliminarCliente = New System.Windows.Forms.Button()
-        Me.btnModificarCliente = New System.Windows.Forms.Button()
-        Me.btnAgregarCliente = New System.Windows.Forms.Button()
+        Me.btnBuscarPaciente = New System.Windows.Forms.Button()
+        Me.btnEliminarPaciente = New System.Windows.Forms.Button()
+        Me.btnModificarPaciente = New System.Windows.Forms.Button()
+        Me.btnAgregarPaciente = New System.Windows.Forms.Button()
         Me.grbNavegacion = New System.Windows.Forms.GroupBox()
-        Me.lblRegistrosCliente = New System.Windows.Forms.Label()
+        Me.lblRegistrosPaciente = New System.Windows.Forms.Label()
         Me.btnUltimoCliente = New System.Windows.Forms.Button()
         Me.btnSiguienteCliente = New System.Windows.Forms.Button()
         Me.btnAnteriorCliente = New System.Windows.Forms.Button()
         Me.btnPrimeroCliente = New System.Windows.Forms.Button()
         Me.grbDatos = New System.Windows.Forms.GroupBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtDireccionPaciente = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtApellidoPaciente = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txtExamenesPaciente = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtSangrePaciente = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -49,14 +49,14 @@ Partial Class FrmPaciente
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtNacimientoPaciente = New System.Windows.Forms.TextBox()
         Me.lblEmailCliente = New System.Windows.Forms.Label()
-        Me.txtEmailCliente = New System.Windows.Forms.TextBox()
+        Me.txtEmailPaciente = New System.Windows.Forms.TextBox()
         Me.lblTelefonoCliente = New System.Windows.Forms.Label()
         Me.txtEdadPaciente = New System.Windows.Forms.TextBox()
         Me.lblDireccionCliente = New System.Windows.Forms.Label()
-        Me.txtDireccionCliente = New System.Windows.Forms.TextBox()
+        Me.txtAlergicoPaciente = New System.Windows.Forms.TextBox()
         Me.lblNombreCliente = New System.Windows.Forms.Label()
         Me.txtNombrePaciente = New System.Windows.Forms.TextBox()
-        Me.txtCodigoCliente = New System.Windows.Forms.TextBox()
+        Me.txtCodigoPaciente = New System.Windows.Forms.TextBox()
         Me.lblCodigoCliente = New System.Windows.Forms.Label()
         Me.grbEdicion.SuspendLayout()
         Me.grbNavegacion.SuspendLayout()
@@ -65,10 +65,10 @@ Partial Class FrmPaciente
         '
         'grbEdicion
         '
-        Me.grbEdicion.Controls.Add(Me.btnBuscarCliente)
-        Me.grbEdicion.Controls.Add(Me.btnEliminarCliente)
-        Me.grbEdicion.Controls.Add(Me.btnModificarCliente)
-        Me.grbEdicion.Controls.Add(Me.btnAgregarCliente)
+        Me.grbEdicion.Controls.Add(Me.btnBuscarPaciente)
+        Me.grbEdicion.Controls.Add(Me.btnEliminarPaciente)
+        Me.grbEdicion.Controls.Add(Me.btnModificarPaciente)
+        Me.grbEdicion.Controls.Add(Me.btnAgregarPaciente)
         Me.grbEdicion.Location = New System.Drawing.Point(301, 590)
         Me.grbEdicion.Margin = New System.Windows.Forms.Padding(1)
         Me.grbEdicion.Name = "grbEdicion"
@@ -78,53 +78,53 @@ Partial Class FrmPaciente
         Me.grbEdicion.TabStop = False
         Me.grbEdicion.Text = "Edicion"
         '
-        'btnBuscarCliente
+        'btnBuscarPaciente
         '
-        Me.btnBuscarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBuscarCliente.Location = New System.Drawing.Point(237, 19)
-        Me.btnBuscarCliente.Margin = New System.Windows.Forms.Padding(1)
-        Me.btnBuscarCliente.Name = "btnBuscarCliente"
-        Me.btnBuscarCliente.Size = New System.Drawing.Size(75, 39)
-        Me.btnBuscarCliente.TabIndex = 8
-        Me.btnBuscarCliente.Text = "Buscar"
-        Me.btnBuscarCliente.UseVisualStyleBackColor = True
+        Me.btnBuscarPaciente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBuscarPaciente.Location = New System.Drawing.Point(237, 19)
+        Me.btnBuscarPaciente.Margin = New System.Windows.Forms.Padding(1)
+        Me.btnBuscarPaciente.Name = "btnBuscarPaciente"
+        Me.btnBuscarPaciente.Size = New System.Drawing.Size(75, 39)
+        Me.btnBuscarPaciente.TabIndex = 8
+        Me.btnBuscarPaciente.Text = "Buscar"
+        Me.btnBuscarPaciente.UseVisualStyleBackColor = True
         '
-        'btnEliminarCliente
+        'btnEliminarPaciente
         '
-        Me.btnEliminarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminarCliente.Location = New System.Drawing.Point(158, 19)
-        Me.btnEliminarCliente.Margin = New System.Windows.Forms.Padding(1)
-        Me.btnEliminarCliente.Name = "btnEliminarCliente"
-        Me.btnEliminarCliente.Size = New System.Drawing.Size(80, 39)
-        Me.btnEliminarCliente.TabIndex = 7
-        Me.btnEliminarCliente.Text = "Eliminar"
-        Me.btnEliminarCliente.UseVisualStyleBackColor = True
+        Me.btnEliminarPaciente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEliminarPaciente.Location = New System.Drawing.Point(158, 19)
+        Me.btnEliminarPaciente.Margin = New System.Windows.Forms.Padding(1)
+        Me.btnEliminarPaciente.Name = "btnEliminarPaciente"
+        Me.btnEliminarPaciente.Size = New System.Drawing.Size(80, 39)
+        Me.btnEliminarPaciente.TabIndex = 7
+        Me.btnEliminarPaciente.Text = "Eliminar"
+        Me.btnEliminarPaciente.UseVisualStyleBackColor = True
         '
-        'btnModificarCliente
+        'btnModificarPaciente
         '
-        Me.btnModificarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModificarCliente.Location = New System.Drawing.Point(69, 19)
-        Me.btnModificarCliente.Margin = New System.Windows.Forms.Padding(1)
-        Me.btnModificarCliente.Name = "btnModificarCliente"
-        Me.btnModificarCliente.Size = New System.Drawing.Size(90, 39)
-        Me.btnModificarCliente.TabIndex = 6
-        Me.btnModificarCliente.Text = "Modificar"
-        Me.btnModificarCliente.UseVisualStyleBackColor = True
+        Me.btnModificarPaciente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModificarPaciente.Location = New System.Drawing.Point(69, 19)
+        Me.btnModificarPaciente.Margin = New System.Windows.Forms.Padding(1)
+        Me.btnModificarPaciente.Name = "btnModificarPaciente"
+        Me.btnModificarPaciente.Size = New System.Drawing.Size(90, 39)
+        Me.btnModificarPaciente.TabIndex = 6
+        Me.btnModificarPaciente.Text = "Modificar"
+        Me.btnModificarPaciente.UseVisualStyleBackColor = True
         '
-        'btnAgregarCliente
+        'btnAgregarPaciente
         '
-        Me.btnAgregarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregarCliente.Location = New System.Drawing.Point(2, 19)
-        Me.btnAgregarCliente.Margin = New System.Windows.Forms.Padding(1)
-        Me.btnAgregarCliente.Name = "btnAgregarCliente"
-        Me.btnAgregarCliente.Size = New System.Drawing.Size(68, 39)
-        Me.btnAgregarCliente.TabIndex = 5
-        Me.btnAgregarCliente.Text = "Nuevo"
-        Me.btnAgregarCliente.UseVisualStyleBackColor = True
+        Me.btnAgregarPaciente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregarPaciente.Location = New System.Drawing.Point(2, 19)
+        Me.btnAgregarPaciente.Margin = New System.Windows.Forms.Padding(1)
+        Me.btnAgregarPaciente.Name = "btnAgregarPaciente"
+        Me.btnAgregarPaciente.Size = New System.Drawing.Size(68, 39)
+        Me.btnAgregarPaciente.TabIndex = 5
+        Me.btnAgregarPaciente.Text = "Nuevo"
+        Me.btnAgregarPaciente.UseVisualStyleBackColor = True
         '
         'grbNavegacion
         '
-        Me.grbNavegacion.Controls.Add(Me.lblRegistrosCliente)
+        Me.grbNavegacion.Controls.Add(Me.lblRegistrosPaciente)
         Me.grbNavegacion.Controls.Add(Me.btnUltimoCliente)
         Me.grbNavegacion.Controls.Add(Me.btnSiguienteCliente)
         Me.grbNavegacion.Controls.Add(Me.btnAnteriorCliente)
@@ -138,15 +138,15 @@ Partial Class FrmPaciente
         Me.grbNavegacion.TabStop = False
         Me.grbNavegacion.Text = "Navegacion"
         '
-        'lblRegistrosCliente
+        'lblRegistrosPaciente
         '
-        Me.lblRegistrosCliente.AutoSize = True
-        Me.lblRegistrosCliente.Location = New System.Drawing.Point(86, 34)
-        Me.lblRegistrosCliente.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.lblRegistrosCliente.Name = "lblRegistrosCliente"
-        Me.lblRegistrosCliente.Size = New System.Drawing.Size(36, 13)
-        Me.lblRegistrosCliente.TabIndex = 4
-        Me.lblRegistrosCliente.Text = "x de n"
+        Me.lblRegistrosPaciente.AutoSize = True
+        Me.lblRegistrosPaciente.Location = New System.Drawing.Point(86, 34)
+        Me.lblRegistrosPaciente.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.lblRegistrosPaciente.Name = "lblRegistrosPaciente"
+        Me.lblRegistrosPaciente.Size = New System.Drawing.Size(36, 13)
+        Me.lblRegistrosPaciente.TabIndex = 4
+        Me.lblRegistrosPaciente.Text = "x de n"
         '
         'btnUltimoCliente
         '
@@ -195,11 +195,11 @@ Partial Class FrmPaciente
         'grbDatos
         '
         Me.grbDatos.Controls.Add(Me.Label7)
-        Me.grbDatos.Controls.Add(Me.TextBox1)
+        Me.grbDatos.Controls.Add(Me.txtDireccionPaciente)
         Me.grbDatos.Controls.Add(Me.Label6)
         Me.grbDatos.Controls.Add(Me.txtApellidoPaciente)
         Me.grbDatos.Controls.Add(Me.Label5)
-        Me.grbDatos.Controls.Add(Me.TextBox5)
+        Me.grbDatos.Controls.Add(Me.txtExamenesPaciente)
         Me.grbDatos.Controls.Add(Me.Label4)
         Me.grbDatos.Controls.Add(Me.txtSangrePaciente)
         Me.grbDatos.Controls.Add(Me.Label3)
@@ -209,14 +209,14 @@ Partial Class FrmPaciente
         Me.grbDatos.Controls.Add(Me.Label1)
         Me.grbDatos.Controls.Add(Me.txtNacimientoPaciente)
         Me.grbDatos.Controls.Add(Me.lblEmailCliente)
-        Me.grbDatos.Controls.Add(Me.txtEmailCliente)
+        Me.grbDatos.Controls.Add(Me.txtEmailPaciente)
         Me.grbDatos.Controls.Add(Me.lblTelefonoCliente)
         Me.grbDatos.Controls.Add(Me.txtEdadPaciente)
         Me.grbDatos.Controls.Add(Me.lblDireccionCliente)
-        Me.grbDatos.Controls.Add(Me.txtDireccionCliente)
+        Me.grbDatos.Controls.Add(Me.txtAlergicoPaciente)
         Me.grbDatos.Controls.Add(Me.lblNombreCliente)
         Me.grbDatos.Controls.Add(Me.txtNombrePaciente)
-        Me.grbDatos.Controls.Add(Me.txtCodigoCliente)
+        Me.grbDatos.Controls.Add(Me.txtCodigoPaciente)
         Me.grbDatos.Controls.Add(Me.lblCodigoCliente)
         Me.grbDatos.Enabled = False
         Me.grbDatos.Location = New System.Drawing.Point(24, 10)
@@ -239,14 +239,14 @@ Partial Class FrmPaciente
         Me.Label7.TabIndex = 24
         Me.Label7.Text = "Direccion:"
         '
-        'TextBox1
+        'txtDireccionPaciente
         '
-        Me.TextBox1.Location = New System.Drawing.Point(103, 357)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(333, 53)
-        Me.TextBox1.TabIndex = 23
+        Me.txtDireccionPaciente.Location = New System.Drawing.Point(103, 357)
+        Me.txtDireccionPaciente.Margin = New System.Windows.Forms.Padding(1)
+        Me.txtDireccionPaciente.Multiline = True
+        Me.txtDireccionPaciente.Name = "txtDireccionPaciente"
+        Me.txtDireccionPaciente.Size = New System.Drawing.Size(333, 53)
+        Me.txtDireccionPaciente.TabIndex = 23
         '
         'Label6
         '
@@ -278,14 +278,14 @@ Partial Class FrmPaciente
         Me.Label5.TabIndex = 20
         Me.Label5.Text = "Examenes y pruebas realizadas:"
         '
-        'TextBox5
+        'txtExamenesPaciente
         '
-        Me.TextBox5.Location = New System.Drawing.Point(262, 501)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(1)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(258, 67)
-        Me.TextBox5.TabIndex = 19
+        Me.txtExamenesPaciente.Location = New System.Drawing.Point(262, 501)
+        Me.txtExamenesPaciente.Margin = New System.Windows.Forms.Padding(1)
+        Me.txtExamenesPaciente.Multiline = True
+        Me.txtExamenesPaciente.Name = "txtExamenesPaciente"
+        Me.txtExamenesPaciente.Size = New System.Drawing.Size(258, 67)
+        Me.txtExamenesPaciente.TabIndex = 19
         '
         'Label4
         '
@@ -374,13 +374,13 @@ Partial Class FrmPaciente
         Me.lblEmailCliente.TabIndex = 10
         Me.lblEmailCliente.Text = "EMAIL:"
         '
-        'txtEmailCliente
+        'txtEmailPaciente
         '
-        Me.txtEmailCliente.Location = New System.Drawing.Point(92, 309)
-        Me.txtEmailCliente.Margin = New System.Windows.Forms.Padding(1)
-        Me.txtEmailCliente.Name = "txtEmailCliente"
-        Me.txtEmailCliente.Size = New System.Drawing.Size(333, 20)
-        Me.txtEmailCliente.TabIndex = 9
+        Me.txtEmailPaciente.Location = New System.Drawing.Point(92, 309)
+        Me.txtEmailPaciente.Margin = New System.Windows.Forms.Padding(1)
+        Me.txtEmailPaciente.Name = "txtEmailPaciente"
+        Me.txtEmailPaciente.Size = New System.Drawing.Size(333, 20)
+        Me.txtEmailPaciente.TabIndex = 9
         '
         'lblTelefonoCliente
         '
@@ -412,14 +412,14 @@ Partial Class FrmPaciente
         Me.lblDireccionCliente.TabIndex = 6
         Me.lblDireccionCliente.Text = "Alegergico a:"
         '
-        'txtDireccionCliente
+        'txtAlergicoPaciente
         '
-        Me.txtDireccionCliente.Location = New System.Drawing.Point(126, 428)
-        Me.txtDireccionCliente.Margin = New System.Windows.Forms.Padding(1)
-        Me.txtDireccionCliente.Multiline = True
-        Me.txtDireccionCliente.Name = "txtDireccionCliente"
-        Me.txtDireccionCliente.Size = New System.Drawing.Size(317, 55)
-        Me.txtDireccionCliente.TabIndex = 5
+        Me.txtAlergicoPaciente.Location = New System.Drawing.Point(126, 428)
+        Me.txtAlergicoPaciente.Margin = New System.Windows.Forms.Padding(1)
+        Me.txtAlergicoPaciente.Multiline = True
+        Me.txtAlergicoPaciente.Name = "txtAlergicoPaciente"
+        Me.txtAlergicoPaciente.Size = New System.Drawing.Size(317, 55)
+        Me.txtAlergicoPaciente.TabIndex = 5
         '
         'lblNombreCliente
         '
@@ -440,13 +440,13 @@ Partial Class FrmPaciente
         Me.txtNombrePaciente.Size = New System.Drawing.Size(333, 20)
         Me.txtNombrePaciente.TabIndex = 3
         '
-        'txtCodigoCliente
+        'txtCodigoPaciente
         '
-        Me.txtCodigoCliente.Location = New System.Drawing.Point(121, 36)
-        Me.txtCodigoCliente.Margin = New System.Windows.Forms.Padding(1)
-        Me.txtCodigoCliente.Name = "txtCodigoCliente"
-        Me.txtCodigoCliente.Size = New System.Drawing.Size(95, 20)
-        Me.txtCodigoCliente.TabIndex = 1
+        Me.txtCodigoPaciente.Location = New System.Drawing.Point(121, 36)
+        Me.txtCodigoPaciente.Margin = New System.Windows.Forms.Padding(1)
+        Me.txtCodigoPaciente.Name = "txtCodigoPaciente"
+        Me.txtCodigoPaciente.Size = New System.Drawing.Size(95, 20)
+        Me.txtCodigoPaciente.TabIndex = 1
         '
         'lblCodigoCliente
         '
@@ -479,29 +479,29 @@ Partial Class FrmPaciente
     End Sub
 
     Friend WithEvents grbEdicion As GroupBox
-    Friend WithEvents btnBuscarCliente As Button
-    Friend WithEvents btnEliminarCliente As Button
-    Friend WithEvents btnModificarCliente As Button
-    Friend WithEvents btnAgregarCliente As Button
+    Friend WithEvents btnBuscarPaciente As Button
+    Friend WithEvents btnEliminarPaciente As Button
+    Friend WithEvents btnModificarPaciente As Button
+    Friend WithEvents btnAgregarPaciente As Button
     Friend WithEvents grbNavegacion As GroupBox
-    Friend WithEvents lblRegistrosCliente As Label
+    Friend WithEvents lblRegistrosPaciente As Label
     Friend WithEvents btnUltimoCliente As Button
     Friend WithEvents btnSiguienteCliente As Button
     Friend WithEvents btnAnteriorCliente As Button
     Friend WithEvents btnPrimeroCliente As Button
     Friend WithEvents grbDatos As GroupBox
     Friend WithEvents lblEmailCliente As Label
-    Friend WithEvents txtEmailCliente As TextBox
+    Friend WithEvents txtEmailPaciente As TextBox
     Friend WithEvents lblTelefonoCliente As Label
     Friend WithEvents txtEdadPaciente As TextBox
     Friend WithEvents lblDireccionCliente As Label
-    Friend WithEvents txtDireccionCliente As TextBox
+    Friend WithEvents txtAlergicoPaciente As TextBox
     Friend WithEvents lblNombreCliente As Label
     Friend WithEvents txtNombrePaciente As TextBox
-    Friend WithEvents txtCodigoCliente As TextBox
+    Friend WithEvents txtCodigoPaciente As TextBox
     Friend WithEvents lblCodigoCliente As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txtExamenesPaciente As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents txtSangrePaciente As TextBox
     Friend WithEvents Label3 As Label
@@ -513,5 +513,5 @@ Partial Class FrmPaciente
     Friend WithEvents Label6 As Label
     Friend WithEvents txtApellidoPaciente As TextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtDireccionPaciente As TextBox
 End Class
