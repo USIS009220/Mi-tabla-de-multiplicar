@@ -10,7 +10,7 @@ Public Class db_conexion
 
     Public Sub New()
         Dim cadenaConexion As String
-        cadenaConexion = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\dbsistema.mdf;Integrated Security=True"
+        cadenaConexion = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Clinica.mdf;Integrated Security=True"
         miConexion.ConnectionString = cadenaConexion
 
         miConexion.Open()
