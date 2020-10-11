@@ -166,12 +166,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="iconfinder-hospitalmedicalhealth-clinicurbanbuildingsarchitectonic-4394778_119503.ico" />
-    <Content Include="db_conexion.mdf">
+    <Content Include="Clinica.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="db_conexion_log.ldf">
+    <Content Include="Clinica_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>db_conexion.mdf</DependentUpon>
+      <DependentUpon>Clinica.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
