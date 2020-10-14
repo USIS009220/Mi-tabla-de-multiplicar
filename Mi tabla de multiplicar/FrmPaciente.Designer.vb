@@ -22,6 +22,7 @@ Partial Class FrmPaciente
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmPaciente))
         Me.grbEdicion = New System.Windows.Forms.GroupBox()
         Me.btnBuscarPaciente = New System.Windows.Forms.Button()
         Me.btnEliminarPaciente = New System.Windows.Forms.Button()
@@ -65,11 +66,12 @@ Partial Class FrmPaciente
         '
         'grbEdicion
         '
+        Me.grbEdicion.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.grbEdicion.Controls.Add(Me.btnBuscarPaciente)
         Me.grbEdicion.Controls.Add(Me.btnEliminarPaciente)
         Me.grbEdicion.Controls.Add(Me.btnModificarPaciente)
         Me.grbEdicion.Controls.Add(Me.btnAgregarPaciente)
-        Me.grbEdicion.Location = New System.Drawing.Point(301, 590)
+        Me.grbEdicion.Location = New System.Drawing.Point(296, 590)
         Me.grbEdicion.Margin = New System.Windows.Forms.Padding(1)
         Me.grbEdicion.Name = "grbEdicion"
         Me.grbEdicion.Padding = New System.Windows.Forms.Padding(1)
@@ -124,6 +126,7 @@ Partial Class FrmPaciente
         '
         'grbNavegacion
         '
+        Me.grbNavegacion.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.grbNavegacion.Controls.Add(Me.lblRegistrosPaciente)
         Me.grbNavegacion.Controls.Add(Me.btnUltimoCliente)
         Me.grbNavegacion.Controls.Add(Me.btnSiguienteCliente)
@@ -194,6 +197,7 @@ Partial Class FrmPaciente
         '
         'grbDatos
         '
+        Me.grbDatos.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.grbDatos.Controls.Add(Me.Label7)
         Me.grbDatos.Controls.Add(Me.txtDireccionPaciente)
         Me.grbDatos.Controls.Add(Me.Label6)
@@ -463,10 +467,12 @@ Partial Class FrmPaciente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Highlight
         Me.ClientSize = New System.Drawing.Size(638, 657)
         Me.Controls.Add(Me.grbEdicion)
         Me.Controls.Add(Me.grbNavegacion)
         Me.Controls.Add(Me.grbDatos)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FrmPaciente"
         Me.Text = "FrmPaciente"
         Me.grbEdicion.ResumeLayout(False)
